@@ -1,16 +1,9 @@
-def main():
-
-    user_input = input("Give me a number: ")
-
-    try:
-        number = float(user_input)
-        
-        if number.is_integer():
-            print("This number is an integer.")
-        else:
-            print("This number is a decimal.")
-    except ValueError:
-        print("That is not a valid number.")
+def check_number_type():
+  number = float(input("Give me a number: "))
+  if number.is_integer():
+    print("This number is an integer.")
+  else:
+    print("This number is a decimal.")
 
 if __name__ == "__main__":
-    main()
+  check_number_type()
